@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CoinViewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,800" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-default navbar-static-top navbar-light bg-light">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">/// Coin Viewer</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">     
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Welcome, fellow human :)</h1>
+                        <p class="lead">Please type bellow the coin name and press the find button to get it's exchange data...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-10">
+                            <input type="input" class="typeahead form-control" id="coin-input" placeholder="BTC...">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <button type="button" class="btn btn-primary btn-block" id="find-btn"><span class="fa fa-chevron-right" aria-hidden="true"></span> Find</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" id="btx-card">
+                    <h5 class="card-header">
+                        <b>BTX</b>
+                    </h5>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="btx-input" class="col-md-4 col-form-label"><i class="fa fa-money" aria-hidden="true"></i> Price: </label>
+                                    <div class="col-md-8">
+                                        <input type="text" readonly class="form-control-plaintext" id="btx-input" value="0">
+                                    </div>
+                                </div>                                                
+                            </form>                                
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="bfx-card">
+                    <h5 class="card-header">
+                        <b>BFX</b>
+                    </h5>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="bfx-input" class="col-md-4 col-form-label"><i class="fa fa-money" aria-hidden="true"></i> Price: </label>
+                                    <div class="col-md-8">
+                                        <input type="text" readonly class="form-control-plaintext" id="bfx-input" value="0">
+                                    </div>
+                                </div>                                                
+                            </form>   
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="bnb-card">
+                    <h5 class="card-header">
+                        <b>BNB</b>
+                    </h5>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="bnb-input" class="col-md-4 col-form-label"><i class="fa fa-money" aria-hidden="true"></i> Price: </label>
+                                    <div class="col-md-8">
+                                        <input type="text" readonly class="form-control-plaintext" id="bnb-input" value="0">
+                                    </div>
+                                </div>                                                
+                            </form>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /container -->    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS + plugins + app code -->
+    <script src="/js/jquery.min.js"></script>   
+    <script src="/js/popper.min.js"></script>    
+    <script src="/js/bootstrap.min.js"></script>  
+    <script src="/js/bootstrap3-typeahead.min.js"></script>      
+    <script src="/js/app.js"></script> 
+</body>
+</html>

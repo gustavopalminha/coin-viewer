@@ -1,0 +1,25 @@
+{
+  "name": "viewer",
+  "version": "1.0.0",
+  "description": "Frontend part of the spring boot backend",
+  "main": "y",
+  "scripts": {
+    "test": "call"
+  },
+  "keywords": [
+    "npm",
+    "frontend"
+  ],
+  "author": "gustavo",
+  "license": "SEE LICENSE IN licence.txt",
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "http-server": "^0.11.1"
+  }
+}
